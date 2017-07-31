@@ -43,10 +43,10 @@ store.insert('mykey', {id:1,name:'test'});
 ```js
 const store = new Store()
 
-store.insert('mykey', {id:1, name:'test', expireAfter: 2}) // Exipre in 2 Miniutes 
+store.insert('mykey', {id:1, name:'test'}, 2) // Exipre in 2 Miniutes 
 
-store.insert('mykey', {id:1,name:'test', expireAfter: '2.minutes'}); // Expire in 2 miniutes
-store.insert('mykey', {id:1,name:'test', expireAfter: '2.hours'}); // Expire in 2 hours
+store.insert('mykey', {id:1,name:'test'}, '2.minutes'); // Expire in 2 miniutes
+store.insert('mykey', {id:1,name:'test'}, '2.hours'); // Expire in 2 hours
 /*
 supported key base on moment.js = 
 years
